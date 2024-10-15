@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+#container {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /* background-color: black; */
+    /* top: 0; */
+    position: relative;
+    
+}
+
+.list-items {
+    display: inline;
+
+
+}
+
+
+.list-items a {
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+    margin-right: 60px;
+    /* background-color: red; */
+    font-weight: 500;
+    font-size: 20px;
+    /* position: fixed; */
+
+}
+
+.list-items a:hover {
+    color: red;
+    text-decoration: underline;
+    /* cursor: pointer; */
+}
+
+.Home-content {
+    margin: 13% 0% 0% 8%;
+}
+
+#second {
+    color: red;
+}
+
+.Home-content h1 {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+
+}
+
+.Home-content a {
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Home-content p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.Home-img {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    bottom: 120px;
+    right: 40px;
+
+}
+#shape{
+    width: 62%;
+    height: 92%;
+}
+
+.group {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: left 2s, bottom 1s;
+}
+/* .group{
+position: absolute;
+    height: 144%;
+    left: 180px;
+    bottom: -206px;
+    transition: left 1s, bottom 1s;
+    width: 61%;
+} */
+.Home-img :hover#shape {
+    bottom: -20px;
+}
+
+.Home-img :hover#men {
+    left: -20px;
+
+}
+
+#about {
+    margin: 15% 8% 0% 8%;
+}
+
+.section-head {
+    text-align: center;
+}
+
+.main-head {
+    font-size: 45px;
+    /* font-family: "Bebas Neue", sans-serif; */
+    /* font-family: "Bebas Neue", sans-serif;
+     */
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sub-head {
+    font-size: 30px;
+    color: blueviolet;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.about-img>img {
+    width: 400px;
+}
+
+.about-body {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    text-align: justify;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+.information {
+    margin-top: 10px;
+}
+
+.info-box>span {
+    margin-left: 10px;
+}
+
+#myskill-img{
+    width: 100%;
+}
+#skill{
+    margin: 8% 8% 0% 8%;
+}
+
+ 
+.skill-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar-head,.bar-percentage{
+    font-size: 20px;
+    font-weight: bold;
+}
+.bar-1{
+    width: 100%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+}
+.bar-2{
+    background-color: blue;
+    width: 90%;
+
+}
+.bar-css{
+    background-color: blue;
+    width: 83%;
+}
+.bar-java{
+    background-color: blue;
+    width: 70%;
+}
+.bar-boot{
+    background-color: blue;
+    width: 72%;
+}
+.icon-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    margin-left: 25px;
+
+}
+.social{
+    color: black;
+    font-size: 30px;
+}
+.icon:hover{
+    background-image: linear-gradient(to left,blue,red);
+    animation: rotate 2s;
+}
+.social:hover{
+    color: white;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+
+    }
+    25%{
+        transform: rotate(-30deg);
+
+    }
+    50%{
+        transform: rotate(30deg);
+
+    }
+    80%{
+        transform: rotate(-30deg);
+
+    }
+    100%{
+        transform: rotate(30deg);
+
+    }
+}
+footer p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 80px;
+}
+#up-arrow{
+  font-size: 45px;
+  float: right;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 20px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: blueviolet;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 25px;
+
+}
